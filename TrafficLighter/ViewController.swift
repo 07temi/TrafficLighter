@@ -16,6 +16,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        redLight.layer.cornerRadius = 55
+//получить скругление через деление высоты
+        yellowLight.layer.cornerRadius = 55
+        greenLight.layer.cornerRadius = 55
+        startButton.titleLabel?.adjustsFontSizeToFitWidth = true
+//Видимо опциональное потому что тайтл может быть пустым
+//не знаю как правильно с ним работать но хотелось чтобы
+//надпись влезала на всех экранах
         switchLightsOff()
     }
 

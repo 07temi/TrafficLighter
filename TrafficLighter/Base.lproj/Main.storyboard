@@ -22,11 +22,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YSw-Pp-6Yz" secondAttribute="height" multiplier="1:1" id="52c-O4-xrm"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="55"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPi-Xg-1Vm">
                                 <rect key="frame" x="132" y="264" width="150" height="150"/>
@@ -34,11 +29,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="KPi-Xg-1Vm" secondAttribute="height" multiplier="1:1" id="BM0-J2-t1S"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="55"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHo-1J-mJo">
                                 <rect key="frame" x="132" y="443" width="150" height="150"/>
@@ -46,11 +36,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="VHo-1J-mJo" secondAttribute="height" multiplier="1:1" id="mDX-1T-EXn"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="55"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34N-v5-qaQ">
                                 <rect key="frame" x="132" y="664" width="150" height="33"/>
