@@ -16,16 +16,47 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        switchLightsOff()
+    }
+
+    
+    func getTrafficLightIsOn() -> String {
+        var result = "off"
+        
+        if redLight.alpha == 1 {
+            result = "red"
+        } else if yellowLight.alpha == 1 {
+            result = "yellow"
+        } else if greenLight.alpha == 1 {
+            result = "green"
+        }
+        return result
+    }
+
+    
+    func switchLightsOff() {
         redLight.alpha = 0.3
         yellowLight.alpha = 0.3
         greenLight.alpha = 0.3
     }
-
+ 
+    
+    
     @IBAction func startPressed() {
+        let state = getTrafficLightIsOn()
+
         startButton.setTitle("NEXT", for: .normal)
         
-        
+        switch state {
+        case "red":
+            switchLightsOff()
+            yellowLight.alpha = 1
+        case "yellow":
+            switchLightsOff()
+            greenLight.alpha = 1
+        default:
+            switchLightsOff()
+            redLight.alpha = 1
+        }
     }
-    
 }
-
