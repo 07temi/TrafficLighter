@@ -17,16 +17,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         redLight.layer.cornerRadius = 55
-//получить скругление через деление высоты
         yellowLight.layer.cornerRadius = 55
         greenLight.layer.cornerRadius = 55
+//Хотел закруглить вью через деление ширины фрейма на 2
+//однако не всегда срабатывает, не смог найти причину
+//redLight.layer.cornerRadius = redLight.frame.width / 2
         startButton.titleLabel?.adjustsFontSizeToFitWidth = true
 //Видимо опциональное потому что тайтл может быть пустым
 //не знаю как правильно с ним работать но хотелось чтобы
 //надпись влезала на всех экранах
         switchLightsOff()
     }
-
     
     func getTrafficLightIsOn() -> String {
         var result = "off"
